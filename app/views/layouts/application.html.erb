@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simplecrm</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :class => "flash flash_#{name}" %>
+<% end %>
+<header><%= yield :header %></header>
+<nav>
+  <ul>
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Contacts", contacts_path %></li>
+  </ul>
+<nav>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<h1>New Contact</h1>
+<% if @contact.errors.any? %>
+<section id="errorExplanation">
+  <header><h1>Contact failed to update</h1></header>
+  <h2><%= pluralize(@contact.errors.count, "error") %> prohibited
+      this post from being saved:</h2>
+  <ul>
+  <% @contact.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+  </ul>
+</section>
+<% end %>
+
+<%= form_for @contact do |f| %>
+  <p>
+    <%= f.label :name %>
+    <br>
+    <%= f.text_field :name %>
+  <p>
+    <%= f.label :email %>
+    <br>
+    <%= f.text_field :email %>
+  <p>
+    <%= f.submit %>
+<% end %>

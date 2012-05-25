@@ -1,0 +1,18 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  home: 'Home'
+  about: 'About'
+  new_contact: 'New Contact'
+  contacts: 'Contacts'
+  create_contact: 'Create Contact'
+  contact: 'Contact Details'
+  contact_create_success: 'Contact was successfully created.'
+  contact_error_msg: 'Error creating contact'
+  return_to_contacts: 'Return to Contacts'
+  edit_contact: 'Edit Contact'
+  update_contact: 'Update Contact'
+  contact_update_success: 'Contact was successfully updated.'
+  contact_delete_success: 'Contact was successfully removed.'
